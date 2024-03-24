@@ -1,6 +1,7 @@
 let divprojects = document.getElementById("divProjects");
 let divPai = document.getElementById("divPai");
 let divPaiAvatar = document.getElementById("avatarDiv");
+let buttonPesquisar = document.getElementById("pesquisar");
 
 function gitHubRepos() {
   let userGitHub = document.getElementById("user").value;
@@ -125,6 +126,7 @@ function getPerfil() {
     `;
 
     divPaiAvatar.appendChild(avatar);
+    buttonPesquisar.setAttribute("disabled", "");
   });
 }
 
@@ -136,6 +138,7 @@ function limparCampo() {
     divPai.classList.add("invisible");
     divprojects.innerHTML = "";
     divPaiAvatar.innerHTML = "";
+    buttonPesquisar.removeAttribute("disabled", "");
     return;
   }
 }
