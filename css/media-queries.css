@@ -21,3 +21,10 @@
     width: 350px;
   }
 }
+
+@media (max-width: 430px) {
+  #projects,
+  #divProjects {
+    width: 330px;
+  }
+}
