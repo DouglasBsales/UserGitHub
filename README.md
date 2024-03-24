@@ -1,5 +1,5 @@
 ## Pesquisa de usuários GitHub
-Aplicação feita para pesquisa de usuários no github
+Aplicação feita para pesquisa de usuários no github. <br>
 Projeto realizado para consolidação de conceitos e métodos usados <br>
 para a integração de APIS 
 ## 🔨 Funcionalidades do projeto
