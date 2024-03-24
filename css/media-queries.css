@@ -1,5 +1,23 @@
 @media (max-width: 1047px) {
-  #divProjects {
+  #divProjects,
+  #projects {
     width: 600px;
+  }
+
+  @media (max-width: 673px) {
+    #divProjects,
+    #projects {
+      width: 370px;
+    }
+
+    #user {
+      width: 400px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  #user {
+    width: 350px;
   }
 }

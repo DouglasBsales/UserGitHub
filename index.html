@@ -4,8 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>User - GitHub</title>
+    <link rel="shortcut icon" href="public/github.svg" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
@@ -14,76 +20,37 @@
     <link rel="stylesheet" href="css/media-queries.css" />
   </head>
   <body style="font-family: 'Noto Sans', sans-serif">
-    <div
-      style="
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      "
-    >
-      <div
-        style="
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          padding-top: 100px;
-          padding-bottom: 100px;
-        "
-      >
+    <div class="w-[100%] flex flex-col items-center">
+      <div class="flex flex-col justify-center items-center py-[100px]">
         <div>
-          <img
-            src="public/githubLogo.png"
-            alt="githubLogo"
-            style="width: 600px"
-          />
+          <img src="public/githubLogo.png" alt="githubLogo" class="w-[600px]" />
         </div>
 
         <div>
           <input
             type="text"
             placeholder="Seu nome de usuário GitHub"
-            style="
-              width: 500px;
-              height: 40px;
-              border-radius: 5px;
-              outline: none;
-              border: 1px solid #cccccc;
-              padding-left: 10px;
-              font-size: 18px;
-            "
+            class="w-[500px] h-[40px] rounded-[5px] outline-none border border-[#cccccc] pl-[10px] text-lg"
             id="user"
           />
         </div>
         <div>
           <button
-            style="
-              width: 200px;
-              margin-top: 20px;
-              background-color: black;
-              border-radius: 8px;
-              cursor: pointer;
-            "
+            class="w-[200px] mt-[20px] bg-[#000] py-[10px] rounded-[8px] cursor-pointer"
             onclick="getPerfil()"
           >
-            <p style="color: #fff; font-size: 18px">Pesquisar</p>
+            <p class="font-semibold" style="color: #fff">Pesquisar</p>
           </button>
         </div>
       </div>
-      <div
-        class="invisible"
-        id="divPai"
-        style="flex-direction: column; align-items: center"
-      >
-        <div id="avatarDiv" style="margin-left: 30px"></div>
+      <div class="flex-col items-center invisible" id="divPai">
+        <div
+          id="avatarDiv"
+          class="flex flex-col items-center justify-center"
+        ></div>
         <div
           id="divProjects"
-          style="
-            width: 1000px;
-            margin-top: 100px;
-            border-top: 1px solid #cccccc;
-          "
+          class="w-[1000px] mt-[100px] border-t border-[#cccccc]"
         ></div>
       </div>
     </div>
